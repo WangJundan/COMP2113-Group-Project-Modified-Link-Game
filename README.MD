@@ -23,25 +23,29 @@
      
 
 # Features to Implement:
-Notice that our coding elements would contains:  
-```
-1. Generation of random game sets or events  
-2. Data structures for storing game status  
-3. Dynamic memory management  
-4. File input/output (e.g., for loading/saving game status)  
-5. Program codes in multiple files
-```
-Using the above coding elements, We would therefore implement following features:  
+
 ***1. Various maps provided***  
 ```
-We may utilize the coding element 1 (Generation of random game sets or events) to achieve the goal:  
-We would create a generation of sets containing different maps and when initialize the game, a random map would be provided.
-```
-***2. to be continued***
-```
-
-```
-***3. tbc***
+We may utilize the coding element 1 (Generation of random game sets or events) and 5 (Program codes in multiple files) to achieve the goal:  
+While storing all the codes of various maps in a “map” file, we could initialize the game in another “main body” file.  
+Recall the map element by generating a random map from the “map” file which is provided to work on.
 ```
 
+***2.Judgement and Elimination***  
 ```
+We may utilize the coding element 2 (Data structures for storing game status) & 4(File input/output) to achieve the goal:  
+We use a 9*9 square matrix to store 81 char variables, the variables are among 26 english letters, i.e. a, b, c….  
+Input:  
+Every time input two location coordinates.  
+Output:  
+1. When it suffices: 1) the  letters of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines that are not blocked by any nonzero location, change both of them to 0.  
+2. When it does not satisfy the condition, output “Error. Select Again”  
+2.When all the variables are changed to 0, print out “Game End” and end the programme.
+```
+
+***3. Remove button***  
+```
+We may utilize the coding element 1 (Generation of random game sets or events) to achieve the goal:   
+We may generate a random letter from the alphabet and remove its corresponding location to 0 value and thus it can be eliminated.
+```
+
