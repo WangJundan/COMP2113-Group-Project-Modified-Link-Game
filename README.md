@@ -1,4 +1,4 @@
-# COMP2113-Project
+# COMP2113 Group Project
 ## Identification of team members: 
     Wang Jundan
     Student uid: 3035771464
