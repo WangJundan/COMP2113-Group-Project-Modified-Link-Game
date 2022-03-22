@@ -40,7 +40,7 @@ Every time input two location coordinates.
 Output:  
 1. When it suffices: 1) the  letters of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines that are not blocked by any nonzero location, change both of them to 0.  
 2. When it does not satisfy the condition, output “Error. Select Again”  
-2.When all the variables are changed to 0, print out “Game End” and end the programme.
+3. When all the variables are changed to 0, print out “Game End” and end the programme.
 ```
 
 ***3. Remove button***  
