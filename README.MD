@@ -1,5 +1,5 @@
 # Table of Content
-* [Identification of Team Members](/COMP2113-Group-Project/edit/main/README.MD#identification-of-team-members)
+* [Identification of Team Members](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#identification-of-team-members)
 * [Description of the Game](/COMP2113-Group-Project/edit/main/README.MD#description-of-the-game)
     * [Brief Introduction](/COMP2113-Group-Project/edit/main/README.MD#brief-introduction)
     * [Game Rules](/COMP2113-Group-Project/edit/main/README.MD#game-rules)
