@@ -1,9 +1,9 @@
 # Table of Content
-* [Identification of Team Members](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#identification-of-team-members)
-* [Description of the Game](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#description-of-the-game)
-    * [Brief Introduction](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#brief-introduction)
-    * [Game Rules](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#game-rules)
-* [Features to Implement](https://github.com/WangJundan/COMP2113-Group-Project/blob/main/README.MD#features-to-implement)
+* [Identification of Team Members](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#identification-of-team-members)
+* [Description of the Game](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#description-of-the-game)
+    * [Brief Introduction](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#brief-introduction)
+    * [Game Rules](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#game-rules)
+* [Features to Implement](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#features-to-implement)
 # Identification of Team Members: 
    **Student 1:** Wang Jundan  
    **Student uid:** 3035771464  
