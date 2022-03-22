@@ -15,8 +15,8 @@
   
   
   ### Game Rules:
-     * The user-interfece would provide the player with a super-remove botton, 2 location coordinates input windows and a picture with random figures distribution.  
-     * The player need to find out all the connectable figures by pairs. When finding out a pair and input their locations via the windows, they would disappear automaticlly. When all figures disappear, the player wins.  
+     * The user-interfece would provide the player with a super-remove botton, 2 location coordinates input windows and a map with random English letters distribution.  
+     * The player need to find out all the connectable letters by pairs. When finding out a pair and input their locations via the windows, they would disappear automaticlly. When all letters disappear, the player wins.  
      * As for so-called "connectable", it refers to: whenever horizonal or vertical, the connecting line can only have at most 3 straight segment.  
      * super-remove button: randomly eliminate one connectable pair regardless the limitation of the above rules.
      
