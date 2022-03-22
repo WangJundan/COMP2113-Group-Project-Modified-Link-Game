@@ -11,7 +11,8 @@
    **Student uid:** 3035772767
 # Description of the Game:
   ### Brief Introduction:
-    haha
+    We decide to create a link game, in which the player can eliminate two blocks as long as they are connected together, i.e. can be linked with less than or equal to three straight lines， and the game ends when all the blocks are eliminated.
+
   
   
   ### Game Rules:
