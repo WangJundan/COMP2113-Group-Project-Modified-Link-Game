@@ -32,9 +32,10 @@ Notice that our coding elements would contains:
 5. Program codes in multiple files
 ```
 Using the above coding elements, We would therefore implement following features:  
-***1. to be continued***  
+***1. Various maps provided***  
 ```
-
+We may utilize the coding element 1 (Generation of random game sets or events) to achieve the goal:  
+We would create a generation of sets containing different maps and when initialize the game, a random map would be provided.
 ```
 ***2. to be continued***
 ```
