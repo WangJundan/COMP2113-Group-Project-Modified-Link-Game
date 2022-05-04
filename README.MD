@@ -17,7 +17,7 @@
   
   ### Game Rules:
      * The user-interfece would provide the player with a super-remove botton, 2 location coordinates input windows and a map with random English letters distribution.  
-     * The player need to find out all the connectable letters which are exactly the same by pairs. When finding out a pair and input their locations via the windows, they would disappear automaticlly. When all letters disappear, the player wins.  
+     * The player need to find out all the connectable letters which are exactly the same by pairs. When finding out a pair and input their locations via the windows, they would disappear automaticlly (turn to 0). When all letters disappear, the player wins.  
      * As for so-called "connectable", it refers to: whenever horizonal or vertical, the connecting line can only have at most 3 straight segment.  
      * super-remove button: randomly eliminate one pair of the same letters regardless the limitation of the above rules.
      
@@ -35,7 +35,7 @@ Therefore we could implement following features utilizing the above coding eleme
 ***1. Storing Map Information***  
 ```
 We may utilize the coding element 2 (Data structures for storing game status) to achieve the goal:  
-We use a 8*8 square matrix to store 64 char variables, the variables are among 26 English letters, i.e. a, b, c...  
+We use a 8*8 2D array to store 36 variables, the variables are integers(i.e. 1,2,3...).The varaibles belong to the outer circle remain constantly 0.
 And as for the blank entries (when letters are eliminated, the corresponding entries go blank), we store its value as 0.
 This data structure is convenient for us to compare value and make judgement in our subsequent works.
 ```
@@ -53,7 +53,7 @@ As for every new game, we use a dynamic memory matrix to record updates of data.
 Input:  
 Every time input two location coordinates.  
 Judgement and Output:  
-1. When it suffices: 1) the  letters of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines that are not blocked by any nonzero location, change both of them to 0 and thus implement eliminations.  
+1. When it suffices: 1) the  integers of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines (namely two turns) that are not blocked by any nonzero location, change both of them to 0 and thus implement eliminations.  
 2. When it does not satisfy the condition 1), output “Error. Select Again”  
 After every opration of elimination, store the current data status by updating the dynamic memory matrix.  
 When all the variables are changed to 0, print out “Game End” and end the programme.
