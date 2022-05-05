@@ -4,6 +4,7 @@
     * [Brief Introduction](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#brief-introduction)
     * [Game Rules](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#game-rules)
 * [Features to Implement](https://github.com/WangJundan/COMP2113-Group-Project-Modified-Link-Game/blob/main/README.MD#features-to-implement)
+* [Compilation and execution instructions]()
 # Identification of Team Members: 
    **Student 1:** Wang Jundan  
    **Student uid:** 3035771464  
@@ -63,5 +64,11 @@ When all the variables are changed to 0, print out “Game End” and end the pr
 ```
 We may utilize the coding element 1 (Generation of random game sets or events) to achieve the goal:   
 We may generate a random letter from the alphabet and remove its corresponding location to 0 value and thus it can be eliminated.
+```
+
+# Compilation and execution instructions:
+```
+* Step 1:
+* Step 2:
 ```
 
