@@ -51,7 +51,7 @@ In the main body file we have stored the map infomations by initializing arrays 
 Input:  
 Every time input two location coordinates.  
 Judgement and Output:  
-1. When it suffices: 1) the  integers of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines (namely two turns) that are not blocked by any nonzero location, change both of them to 0 and thus implement eliminations.  
+1. When it suffices: 1) the integers of the two selected locations are the same, 2) They can be linked with less than or equal to three straight lines (namely two turns) that are not blocked by any nonzero location, change both of them to 0 and thus implement eliminations.  
 2. When it does not satisfy the condition 1), output error message to let the player choose coordinates again.
 3. After each of the successful elimination, store the current data status by updating the dynamic memory array and print the refreshed array again for the convenience of the user action.
 When all the variables are changed to 0, print out “Game End” and end the programme.
@@ -62,7 +62,11 @@ When all the variables are changed to 0, print out “Game End” and end the pr
 ```
 We may utilize the coding element 1 (Generation of random game sets or events) and coding element 3 (dynamic memory management) to achieve the goal:   
 When the input is 0,0,0,9, We may generate a random number from the 1 to 9 and mark this number as key.
-For each super-remove operation, we have a dynamic array 
+The super-remove operation will search for the elements in the board which are equal to key value, than replace all these elements with 0.
+However, every time using super-remove, the player will increase the risk of intriguing punishment.
+Here we use a dynamic array *p whose size is the time of super-remove operation the player has conducted, and the each element of this array is a random integer number between 1 and 9.
+If there exists an element in this array larger than 7, the punishment is intrigued, namely, fill in all the 0 in the board with key value.
+For example, if we conduct the super-remove operation twice, p will be a dynamic array of size 2. If p={2,8} (randomly generated), 8>7, then there will be a punishment.
 ```
 
 ***4. Storing unfinished game status***
