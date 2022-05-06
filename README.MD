@@ -21,7 +21,7 @@
      * During the playing process, the user-interfece would provide the player with 2 location coordinates input windows and the map chosen with random integer number distribution.
      * Normally, the player need to find out all the connectable numbers which are exactly the same by pairs. When finding out a pair and input their locations via the windows by entering 4 numbers (the row of the first number, the column of the first number, the row of the second number, the column of the second number), they would disappear automaticlly (turn to 0). When all letters disappear, the player wins.  
      * As for "connectable", it refers to: whenever horizonal or vertical, the connecting line between these two numbers can only have straight segments and at most 3 segments. 
-     * Except for normal elimination, we extra provide the super-remove operation: when the four input numbers are 0, 0, 0 and 9 correspondingly, we then implement the super-remove operation. It would randomly generate an integer from 1 to 9. And then probably eliminate all this integer in the map regardless the limitation of the above rules but also have low posibility to .
+     * Except for normal elimination, we extra provide the super-remove operation: when the four input numbers are 0, 0, 0 and 9 correspondingly, we then implement the super-remove operation. It would randomly generate an integer from 1 to 9. And then probably eliminate all this integer in the map regardless the limitation of the above rules but also have low posibility to get the punishment. The punishment is: fill in all the 0 in the board with this random integer.
      
 
 # Features to Implement:
