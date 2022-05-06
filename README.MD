@@ -21,7 +21,7 @@
      * During the playing process, the user-interfece would provide the player with 2 location coordinates input windows and the map chosen with random integer number distribution.
      * Normally, the player need to find out all the connectable numbers which are exactly the same by pairs. When finding out a pair and input their locations via the windows by entering 4 numbers (the row of the first number, the column of the first number, the row of the second number, the column of the second number), they would disappear automaticlly (turn to 0). When all letters disappear, the player wins.  
      * As for "connectable", it refers to: whenever horizonal or vertical, the connecting line between these two numbers can only have straight segments and at most 3 segments. 
-     * Except for normal elimination, we extra provide the super-remove operation: when the four input numbers are 0, 0, 0 and 9 correspondingly, we then implement the super-remove operation. It would randomly choose an integer and eliminate all this integer in the map regardless the limitation of the above rules.
+     * Except for normal elimination, we extra provide the super-remove operation: when the four input numbers are 0, 0, 0 and 9 correspondingly, we then implement the super-remove operation. It would randomly generate an integer from 1 to 9. And then probably eliminate all this integer in the map regardless the limitation of the above rules but also have low posibility to .
      
 
 # Features to Implement:
@@ -41,19 +41,13 @@ We use a 8*8 2D array to store 36 variables, the variables are integers(i.e. 1,2
 And as for the blank entries (when letters are eliminated, the corresponding entries go blank), we store its value as 0.
 This data structure is convenient for us to compare value and make judgement in our subsequent works.
 ```
-***2. Judgement operation***  
+***2. Judgement and elimination operation***  
 ```
 We may utilize the coding element 5 (program codes in multiple files) to achieve the goal:
 We have 3 various file for the program which are the header file(.h), the function definition file (.cpp) and the main body file (.cpp).
 In the header file we have all the function declarations and this header file is included in both function definition file and the main body file.
 In the function definition file we have all the function definition codes which is convenient for game implement like check whether the input coordinates can be eliminate legally
 In the main body file we have stored the map infomations by initializing arrays and the codes for judgement process by using the functions contained in the header file.
-```
-
-***3. Elimination operation***  
-```
-We may utilize the coding element 4 (File input/output) and 3 (Dynamic memory management) to achieve the goal:  
-As for every new game, we use a dynamic memory array called board to record updates of data.
 Input:  
 Every time input two location coordinates.  
 Judgement and Output:  
@@ -63,11 +57,22 @@ Judgement and Output:
 When all the variables are changed to 0, print out “Game End” and end the programme.
 ```
 
-***4. Super-Remove Operation***  
+
+***3. Super-Remove Operation***  
 ```
-We may utilize the coding element 1 (Generation of random game sets or events) to achieve the goal:   
-We may generate a random number from the 1 to 9 and remove its corresponding location to 0 value and thus it can be eliminated.
+We may utilize the coding element 1 (Generation of random game sets or events) and coding element 3 (dynamic memory management) to achieve the goal:   
+When the input is 0,0,0,9, We may generate a random number from the 1 to 9 and mark this number as key.
+For each super-remove operation, we have a dynamic array 
 ```
+
+***4. Storing unfinished game status***
+```
+We may utilize the coding element 4 (file input/output) to achieve the goal:
+We have a txt file for saving the unfinished game map infomation.
+Before the game, we would check whether the file is empty or not. If empty, then it means there're no unfinished game status save, thus start the new game; if not, then it means there's an unfinished game and we use file output to the current map to keep working on the unfinished game.
+When in a gaming process, we use file input to record every change of the current operating map.
+And when the game is over i.e. the player wins, the file would be cleaned to an empty file.
+
 
 # Compilation and execution instructions:
 ```
