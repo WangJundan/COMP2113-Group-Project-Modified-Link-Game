@@ -72,7 +72,7 @@ We have a txt file for saving the unfinished game map infomation.
 Before the game, we would check whether the file is empty or not. If empty, then it means there're no unfinished game status save, thus start the new game; if not, then it means there's an unfinished game and we use file output to the current map to keep working on the unfinished game.
 When in a gaming process, we use file input to record every change of the current operating map.
 And when the game is over i.e. the player wins, the file would be cleaned to an empty file.
-
+```
 
 # Compilation and execution instructions:
 ```
