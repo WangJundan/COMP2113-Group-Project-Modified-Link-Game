@@ -79,8 +79,6 @@ int map5[8][8]=
 int main(){
     //check whether the last game is finished. If not, then continue the last round. If finished, then start a new game.
     ifstream ifs("data.txt",ios::in);
-    char ch;
-    ifs>>ch;
     //count the number of times that the player use the super remove button
     int numofsv=0;
     //if finished, then the gamestatus file should be empty. Thus start a new game.
