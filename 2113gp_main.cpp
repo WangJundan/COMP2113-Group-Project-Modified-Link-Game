@@ -135,6 +135,15 @@ int main(){
                     }
                 }
             }
+            ofstream out("data.txt");
+            for(int i=0;i<8;i++){
+                for(int j=0;j<7;j++){
+                    out<<board[i][j]<<' ';
+                }
+                out<<board[i][7];
+                out << endl;
+            }
+            out.close();
 
 
 
