@@ -203,7 +203,7 @@ int main(){
                     for(int j=0;j<7;j++){
                         out<<board[i][j]<<' ';
                     }
-                    out<<board[i][8];
+                    out<<board[i][7];
                     out << endl;
                 }
                 out.close();
@@ -225,7 +225,7 @@ int main(){
                     for(int j=0;j<7;j++){
                         out<<board[i][j]<<' ';
                     }
-                    out<<board[i][8];
+                    out<<board[i][7];
                     out << endl;
                 }
                 out.close();
@@ -246,7 +246,7 @@ int main(){
                     for(int j=0;j<7;j++){
                         out<<board[i][j]<<' ';
                     }
-                    out<<board[i][8];
+                    out<<board[i][7];
                     out << endl;
                 }
                 out.close();
