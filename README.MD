@@ -80,7 +80,10 @@ And when the game is over i.e. the player wins, the file would be cleaned to an 
 
 # Compilation and execution instructions:
 ```
-* Step 1:
-* Step 2:
+* Step 1: Open the linux system.
+* Step 2: Open the generate terminal emulator.
+* Step 3: Open to the dictionary of the game.
+* Step 4: Input command "$ make linkgame".
+* Step 5: Input command "$ ./linkgame" to start the game.
 ```
 
